@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sayeed.proctorapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="Szcsf2dqv81aaq7eLtlzyjNYMAbpQNmypPM8BiJt" />
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="rfit0xMkfAVizbgywvDkiH6q1KGUFrtx5IThdRz2" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfessorLogin"
+            android:label="@string/title_activity_professor_login" >
+        </activity>
+        <activity
+            android:name=".StudentLogin"
+            android:label="@string/title_activity_student_login" >
+        </activity>
+        <activity
+            android:name=".Details"
+            android:label="@string/title_activity_details" >
+        </activity>
+        <activity
+            android:name=".DetailsPro"
+            android:label="@string/title_activity_details_pro" >
+        </activity>
+    </application>
+
+</manifest>
