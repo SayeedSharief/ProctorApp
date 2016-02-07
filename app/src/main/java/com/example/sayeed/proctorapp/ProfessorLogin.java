@@ -24,12 +24,13 @@ public class ProfessorLogin extends ActionBarActivity {
         pLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String em = pEmail.getText().toString();
-                String pswd = pPasswd.getText().toString();
+                String em = pEmail.getEditableText().toString().toUpperCase();
+                String pswd = pPasswd.getEditableText().toString();
                 if(em.isEmpty() || pswd.isEmpty())
                     Toast.makeText(getApplicationContext(),"Please enter both eMail and Password",Toast.LENGTH_LONG).show();
                 else{
                     Intent in = new Intent(ProfessorLogin.this,DetailsPro.class);
+                    in.putExtra("pEmail",em);
                     startActivity(in);
                 }
             }

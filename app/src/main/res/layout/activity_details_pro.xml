@@ -52,36 +52,47 @@
         android:layout_weight="0.5"
         android:orientation="vertical">
 
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/pname"
+            android:hint="name"
             android:textStyle="bold"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/designation"
+            android:hint="designation"
             android:textStyle="bold"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:hint="students"
             android:id="@+id/students"
             android:textStyle="bold"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/subjects"
+            android:hint="sub"
             android:textStyle="bold"/>
-        <TextView
+        <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/quiz"
+            android:hint="date"
             android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter"
+            android:id="@+id/enter_button"/>
     </LinearLayout>
 
 

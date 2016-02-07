@@ -36,9 +36,9 @@ public class Details extends ActionBarActivity {
         query.findInBackground(new FindCallback<ParseObject>() {
             @Override
             public void done(List<ParseObject> objects, ParseException e) {
-                if(e==null)
-                    Toast.makeText(getApplicationContext(),"All the best!",Toast.LENGTH_LONG).show();
-                    for (ParseObject ob : objects){
+                if (e == null) {
+                    Toast.makeText(getApplicationContext(), "All the best!", Toast.LENGTH_LONG).show();
+                    for (ParseObject ob : objects) {
                         Usn.setText(ob.get("USN").toString());
                         Name.setText(ob.get("sNAME").toString());
                         Sub1.setText(ob.get("CIE1").toString());
@@ -46,6 +46,9 @@ public class Details extends ActionBarActivity {
                         Sub3.setText(ob.get("CIE2").toString());
 
                     }
+                }else {
+                    Toast.makeText(getApplicationContext(),"Error",Toast.LENGTH_LONG).show();
+                }
             }
         });
      }
